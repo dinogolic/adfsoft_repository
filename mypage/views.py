@@ -18,23 +18,23 @@ def feedback(request):
         return render(request, 'index.html')
 
 
-def blog(request):
+def projekti(request):
     if request.method == 'POST':
 
         email = request.POST['email']
         send_mail('feedback', email, email, ['dino.golic13@gmail.com'], fail_silently=False)
-        return redirect('/blog')
+        return redirect('/projekti')
 
     else:
         return render(request, 'blog.html')
 
 
-def journal(request):
+def usluge(request):
     if request.method == 'POST':
 
         email = request.POST['email']
         send_mail('feedback', email, email, ['dino.golic13@gmail.com'], fail_silently=False)
-        return redirect('/journal')
+        return redirect('/usluge')
 
     else:
         return render(request, 'journal.html')

@@ -1330,7 +1330,9 @@ h1, h2, h3, h4, h5,
       color: #000; }
       .post-entry-1 .post-entry-1-contents h2 a:hover {
         color: #01d28e; }
-
+.post-entry-1-contents p{
+       background-color:gray;
+}
 .post-entry-1.person-1 {
   text-align: center; }
   .post-entry-1.person-1 img {
@@ -1819,3 +1821,34 @@ h1, h2, h3, h4, h5,
 .person-pic-39219 img {
   border-radius: 50%;
   width: 70px; }
+
+#tick-mark {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#tick-mark::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 3px;
+    background-color: #f8f9fa;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f8f9fa;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
