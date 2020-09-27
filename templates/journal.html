@@ -62,8 +62,8 @@
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li><a href="/" class="nav-link">ADF Soft</a></li>
                   <li class="active"><a href="/usluge" class="nav-link">Usluge</a></li>
-                  <li><a href="/projekti" class="nav-link">Naši projekti</a></li>
-                  <li><a href="contact/" class="nav-link">Kontakt</a></li>
+                  <!--<li><a href="/projekti" class="nav-link">Naši projekti</a></li> -->
+                  <li><a href="/contact" class="nav-link">Kontakt</a></li>
                 </ul>
               </nav>
             </div>
@@ -191,8 +191,8 @@
                 <ul class="list-unstyled">
                   <li><a href="/">ADF Soft</a></li>
                   <li class="active"><a href="/usluge">Usluge</a></li>
-                  <li><a href="/projekti">Naši projekti</a></li>
-                  <li><a href="contact/">Kontakt</a></li>
+                 <!-- <li><a href="/projekti">Naši projekti</a></li> -->
+                  <li><a href="/contact">Kontakt</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
@@ -203,7 +203,7 @@
                   <a href="#"><span class="icon-twitter"></span></a>  
                  </div>
                 <h2 class="footer-heading mb-4">Ostavite Vaš feedback</h2>
-                <form action="journal" method="post" class="d-flex" class="subscribe">
+                <form action="feedback" method="post" class="d-flex" class="subscribe">
                   {% csrf_token %}
                   <input type="text" class="form-control mr-3" placeholder="Vaša kratka poruka" name="email">
                   <input type="submit" value="Pošalji" class="btn btn-primary">
